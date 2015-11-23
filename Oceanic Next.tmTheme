@@ -9,11 +9,11 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>background</key>
-		<string>#343d46</string>
+		<string>#ff3d00</string>
 		<key>divider</key>
 		<string>#343d46</string>
 		<key>foreground</key>
-		<string>#65737e</string>
+		<string>#ff0000</string>
 		<key>selectionBackground</key>
 		<string>#4f5b66</string>
 		<key>selectionForeground</key>
@@ -27,19 +27,52 @@
 	<array>
 		<dict>
 			<key>settings</key>
-			<dict>
+			<dict><!-- 
+                <key>gutterForeground</key>
+                <string>#65737e33</string>
+                <key>gutter</key>
+                <string>#252525</string> -->
+
+
+                <key>gutterForeground</key>
+                <string>#363636</string>
+                <key>gutter</key>
+                <string>#24251F</string>
 				<key>background</key>
-				<string>#1B2B34</string>
+				<!-- <string>#1B1B14</string> -->
+				<string>#272822</string>
 				<key>caret</key>
 				<string>#c0c5ce</string>
 				<key>foreground</key>
-				<string>#CDD3DE</string>
+				<string>#CDD3DE44</string>
 				<key>invisibles</key>
 				<string>#65737e</string>
 				<key>lineHighlight</key>
-				<string>#65737e55</string>
+				<!-- <string>#65737e55</string> -->
+				<string>#00000030</string>
 				<key>selection</key>
 				<string>#4f5b66</string>
+
+
+
+                <key>stackGuide</key>
+                <!-- <string>#55550FB0</string> -->
+                <string>#75715E30</string>
+                <key>activeGuide</key>
+                <string>#FF550F50</string>
+                <key>guide</key>
+                <string>#303030</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comments</string>
+			<key>scope</key>
+			<string>text, source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CDD3DE</string>
 			</dict>
 		</dict>
 		<dict>
@@ -94,7 +127,62 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#EB606B</string>
+				<string>#c06030</string>
+				<!-- <string>#EB606B</string> -->
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag.jsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#505050</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>punctuation.section.embedded.end.jsx, punctuation.section.embedded.begin.jsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<!-- <string>#505050</string> -->
+				<!-- <string>#c06030</string> -->
+				<!-- <string>#c0a090aa</string> -->
+				<string>#66D9EF</string>
+				<!-- <string>#FF00EF</string> -->
+				<!-- <string>#cccccc</string> -->
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag.end.jsx, punctuation.definition.tag.begin.jsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<!-- <string>#505050</string> -->
+				<!-- <string>#c06030</string> -->
+				<!-- <string>#c0a090aa</string> -->
+				<string>#555555</string>
+				<!-- <string>#FF00EF</string> -->
+				<!-- <string>#cccccc</string> -->
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>period</string>
+			<key>scope</key>
+			<string>keyword.operator.accessor.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#cccccc</string>
 			</dict>
 		</dict>
 		<dict>
@@ -132,15 +220,28 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>String, Symbols, Inherited Class, Markup Heading</string>
+			<string>Symbols, Inherited Class, Markup Heading</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<string>constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>normal</string>
 				<key>foreground</key>
 				<string>#99C794</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string, punctuation.definition.string.begin.jsx, punctuation.definition.string.end.jsx, punctuation.definition.string.begin.js, punctuation.definition.string.end.js, punctuation.definition.string.jsx</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
+				<key>foreground</key>
+				<string>#E6DB74</string>
 			</dict>
 		</dict>
 		<dict>
